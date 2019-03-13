@@ -3,8 +3,7 @@ body
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background: black;
-    background-image: url("medias/background.png");
+    background-color: black;
 }
 
 nav
@@ -21,14 +20,17 @@ header nav .menu
 {
 width: 50%;
 height: 100%;
-margin: 70px;
 padding: 1%;
 margin-right: 0px;
 float: right;
 }
 .menu a
 {
+display: block;
+float: right;
 padding: 2%;
+padding-top: 70px;
+font-family: 'Times New Roman', Times, serif;
 }
 a
 {
@@ -40,11 +42,10 @@ font-style: oblique;
 .top2
 {
 width: 100%;
-height: 100%;
+height: auto;
 background-color: black;
 margin: 0 auto;
 display: block;
-margin-top: 50px;
 float: left;
 }
 
@@ -58,7 +59,6 @@ margin: 0 auto;
 display: block;
 max-width: 100%;
 max-height: 150%;
-margin-top: 5%;
 }
 
 section.top article
@@ -100,6 +100,8 @@ h1
 color: white;
 font-size: 90;
 float: left;
+font-family: 'Times New Roman', Times, serif;
+margin-left: 5%;
 }
 
 .text
@@ -107,6 +109,7 @@ float: left;
 color: red;
 font-style: oblique;
 text-align: center;
+font-family: 'Times New Roman', Times, serif;
 }
 
 article img
@@ -130,23 +133,47 @@ margin: 10px;
 float: left;
 }
 
-.col-xs-sm-md-lg-12
+.img
 {
-width: 80%;
-height: 90%;
+width: 90%;
+height: 70%;
 display: block;
 margin: auto;
 padding: 1%;
+margin: 0% 25% 0% 25%;
 overflow: hidden;
-transition: 2s ease;
+transition: 2s;
 }
 
-.col-xs-sm-md-lg-12:hover
+.img:hover
 {
-width:90%;
-height:100%;
-transition:2s ease;
-opacity: 1;
+transition: 2s;transform: scale(1.1);
+}
+
+#pic1
+{
+background-size: 100% auto;
+background: url('medias/printemps.png') center center;
+}
+
+
+#pic2
+{
+background-size: 100% auto;
+background: url('medias/ete.png') center center;
+}
+
+
+#pic3
+{
+background-size: 100% auto;
+background: url('medias/automne.png') center center;
+}
+
+#pic4
+{
+background-size: 100% auto;
+background: url('medias/hiver.png') center center;
 }
 
 @media screen and (max-width: 769px)
@@ -179,13 +206,20 @@ height: 90%;
 float: left;
 }
 
-.footer
+footer 
 {
 width: 100%;
-height: 10%;
+height: 15%;
 background-color: white;
-margin-top: 5%;
+display: block;
 float: left;
+}
+
+.foot
+{
+padding-top: 5%;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
 }
 .text-position
 {
@@ -211,6 +245,16 @@ position: relative;
 
 #titre
 {
-margin: auto;
+padding-top: 7%;
+margin-left: 20%;
 float: left;
+color: #fffefa;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.bande
+{
+width: 100%;
+height: 50%;
+background: url('../medias/bande.png') center center;
 }
