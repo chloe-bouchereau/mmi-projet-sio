@@ -2,119 +2,320 @@
         <head>
                 <meta charset="utf-8">
                 <title> Mode actu | Conseils morphologies </title> 
-                <meta name="description" content="Ici se trouve la description de la page visible sur une recherche Google" />
-                <meta name="keywords" conten=" Mode actu; mode; vêtements; tendances; morphologies; conseils; actuelle; marques; blog; tenues; nouveautés" />
-                <meta name="author" content="A.W" />
+                <meta name="description" content="Sur cette page vous pouvez retrouver nos conseils de mode pour tous les types de morphologie" />
+                <meta name="keywords" conten=" Mode actu; mode; vêtements; tendances; morphologies; conseils; actuelle; marques; blog; tenues; nouveautés; look; poitrine; taille" />
+                <meta name="author" content="C.B" />
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+                <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
                <!-- Latest compiled and minified CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
                <!-- Optional theme -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         
                <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
           
                 <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
                
-            </head>
+        </head>
             <body>
+            <!-- Barre de navigation -->
                     <header>
                             <nav>
-                        <a href="#">
-                        <img src="../medias/img1.png" width="120px">
-                        </a>
-                        <div class="menu">
-                            <a href="../index.html"> Accueil </a>
-                            <a href="blog.html"> Blog </a>
-                            <a href="connexion.html"> Connexion</a>
-                            <a href="pages/inscription.html"> Inscription</a>
-                            <a href="contact.html"> Contact </a>
-                        </div>
+                                <a href="#">
+                                 <img id="logo" src="../medias/logo.png" class="col-xs-sm-md-lg-1">
+                                </a>
+                                    <div class="menu">
+                                        <a href="contact.html"> Contact </a>
+                                        <a href="inscription.html"> Inscription</a>
+                                        <a href="connexion.html"> Connexion</a>
+                                        <a href="blog.html"> Blog </a>
+                                        <a href="../index.html"> Accueil </a>
+                                    </div>
                             </nav>
                     </header>
                
-        <section>
-            <div>
-            <h1 id="titre"> Nos conseils morphologies</h1>
-            </div>
-        </section> 
-      <!-- Image bandeau -->
-            <div>
-            <img src="../medias/morphologie.png" class="bandeau">
-            </div>
-      <!-- Article 1: morphologie en A-->
-            <section >
-                <div class="col-md-lg-4" class="col-xs-sm-12">
-                <article class="long-article">
-                    <li>
-                    <ol><h2> Morphologie en A </h2></ol><img class="item1" src="../medias/a.png">
-                    <ol> Caractéristiques de la morphologie en A: </ol>
-                    <ol> - Hanches plus larges que les épaules </ol>
-                    <ol> - Hanches arrondies </ol>
-                    <ol> - Taille plus étroite que les hanches </ol>
-                    <ol> - Silhouette mince ou de corpulence moyenne </ol>
-                    <ol> Objectif: il faut donc mettre en valeur votre buste afin d'équilibrer avec le bas de vore corps et ne pas accentuer le volume de vos hanches.</ol>
-                    </li>
-                </article>
-            </section>
+                
+                    <div>
+                        <h1 id="titre"> Nos conseils morphologies</h1>
+                    </div>
+                
+    <!-- Image bandeau -->
+                <div class="row">
+                    <img src="../medias/morphologie.png" class="bandeau">
+                </div>
+    <!-- Article 1: morphologie en A-->
+                
+                    <div class="row">
+                    <div class="col-md-lg-4" class="col-xs-sm-12">
+                        <div class="article-long">
+                            <ul>
+                                <ol>
+                                    <h2> Morphologie en A </h2>
+                                </ol>
+                                <img class="item1" src="../medias/a.png">
+                                <h3> Caractéristiques de la morphologie en A: </h3>
+                                <ol> - Hanches plus larges que les épaules </ol>
+                                <ol> - Hanches arrondies </ol>
+                                <ol> - Taille plus étroite que les hanches </ol>
+                                <ol> - Silhouette mince ou de corpulence moyenne </ol><br>
+                                <ol> Objectif: il faut donc mettre en valeur votre buste afin d'équilibrer avec le bas de vore corps et ne pas accentuer le volume de vos hanches.</ol>
+                                <ol> Pour harmoniser vote carrure, vous devez éviter d'accentuer l'effet pyramidale. Pour cela il vous faut bannir certains looks.</ol>
+                                <ol> Par exemple vous devez éviter toutes les robes tubes et jupes aux rayures horizontales car ces motifs amplifies le déséquilibre entre le haut et le bas de votre corps.</ol>
+                                <img class="looks" src="../medias/robe-tube-.jpg">
+                                <img class="looks" src="../medias/jupe-rayure.jpg"><br>
+                                <h3> Quels vêtements prendre pour vous sublimer ? </h3>
+                                <ol> Tout d'abord optez pour des cols en v ou cols bateaux pour allonger votre port de tête et mettre en valeur votre poitrine.</ol>
+                                <ol> Pour élancer votre silhouette n'hésitez pas à porter des robes taille empire ou forme trapèze.</ol>
+                                <img class="looks" src="../medias/empire.jpg">
+                                <img class="looks" src="../medias/trapeze.jpg">
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </section>
 
      <!-- Article 2: morphologie en X-->
             
-     <section>
-            <div class="col-md-lg-4" class="col-xs-sm-12">
-            <article class="long-article">
-                <li>
-                <ol><h2> Morphologie en X </h2></ol><img class="item1" src="../medias/x.png">
-                <ol> Caractéristiques de la morphologie en X: </ol>
-                <ol> - Epaules et hanches dans le même alignement </ol>
-                <ol> - Taille marquée </ol>
-                <ol> - Silhouette fine </ol>
-                <ol> Objectif: étoffer votre silhouette et mettre l'accent sur votre taille fine.</ol>
-                </li>
-            </article>
-        </section>
+                 <section>
+                    <div class="row">
+                    <div class="col-md-lg-4" class="col-xs-sm-12">
+                        <div class="article-long">
+                            <ul>
+                                <ol>
+                                    <h2> Morphologie en X </h2>
+                                </ol>
+                                    <img class="item1" src="../medias/x.png">
+                                <h3> Caractéristiques de la morphologie en X: </h3>
+                                <ol> - Epaules et hanches dans le même alignement </ol>
+                                <ol> - Taille marquée </ol>
+                                <ol> - Silhouette fine </ol><br>
+                                <ol> Objectif: étoffer votre silhouette et mettre l'accent sur votre taille fine.</ol>
+                                <ol> On oublie tous les looks qui ne marque pas votre taille tel que les coupes droites ou larges.</ol>
+                                <ol> On évite également les gros imprimés, les frou-frous et volants qui vont accentuer les volumes.</ol>
+                                <ol> Les top amples ne sont également pas adapté pour votre morphologie car la poitrine n'est pas définie et votre taille est dissimulée. </ol>
+                                <img class="looks" src="../medias/ample.jpg">
+                                <img class="looks" src="../medias/coupe_droite.jpg">
+                                <h3> Quels vêtements prendre pour vous sublimer ? </h3>
+                                <ol> L'idéale pour votre morphologie c'est de mettre votre taille en valeur avec par exemple une robe ceinturée ou fourreau.</ol>
+                                <ol> On opte également pour les tops ou robes à col V pour mettre en avant votre poitrine.</ol>
+                                <img class="looks" src="../medias/fourreau.jpg">
+                                <img class="looks" src="../medias/col-v.jpg">
+                            </ul>
+                        </div>
+                    </div>
+                    </div>    
+                
 
 
 
         <!-- Article 3: morphologie en H-->
             
-     <section>
-            <div class="col-md-lg-4" class="col-xs-sm-12">
-            <article class="long-article">
-                <li>
-                <ol><h2> Morphologie en H </h2></ol><img class="item1" src="../medias/h.png">
-                <ol> Caractéristiques de la morphologie en H: </ol>
-                <ol> - Epaules, taille et hanches dans le même alignement </ol>
-                <ol> - La taille n'est pas marquée </ol>
-                <ol> - Silhouette mince ou de corpulence moyenne </ol>
-                <ol> Objectif:  mettre l’accent sur vos épaules et étoffer vos hanches tout en créant une illusion de taille marquée.</ol>
-                </li>
-            </article>
-        </section>
+               
+                    <div class="row">
+                    <div class="col-md-lg-4" class="col-xs-sm-12">
+                        <div class="article-long">
+                            <ul>
+                                <ol>
+                                    <h2> Morphologie en H </h2>
+                                </ol>
+                                    <img class="item1" src="../medias/h.png">
+                                <h3> Caractéristiques de la morphologie en H: </h3>
+                                <ol> - Epaules, taille et hanches dans le même alignement </ol>
+                                <ol> - La taille n'est pas marquée </ol>
+                                <ol> - Silhouette mince ou de corpulence moyenne </ol><br>
+                                <ol> Objectif:  mettre l’accent sur vos épaules et étoffer vos hanches tout en créant une illusion de taille marquée.</ol>
+                                <ol> Il faut tout d'abord éviter les vêtements qui marquent la taille, ils ne feront que mettre en lumière le fait que vous n'en avez pas.</ol>
+                                <ol> Il vous est déconseillé de porter des pantalons et des jupes évasés qui ne feront qu'apporter du volume au bas de votre corps et épaississent la silouhette.</ol>
+                                <img class="looks" src="../medias/robe-marquee.jpg">
+                                <img class="looks" src="../medias/jupe-evasee.jpg">
+                                <h3> Quels vêtements prendre pour vous sublimer ? </h3>
+                                <ol> Pour vous il est important de mettre votre poitrine en valeur avec des tops décolletés et des chemisiers ouverts.</ol>
+                                <ol> Vous pouvez égelement opter pour des tailleurs et des blazers peu cintrés à toujours porter ouvert. </ol>
+                                <img class="looks" src="../medias/blazer.jpg">
+                                <img class="looks" src="../medias/chemisier.jpg">    
+                            </ul>
+                            </div>
+                    </div>
+                    </div>
+       
 
 
 
         
         <!-- Article 4: morphologie en V-->
             
-     <section>
+        
+            <div class="row">
             <div class="col-md-lg-4" class="col-xs-sm-12">
-            <article class="long-article">
-                <li>
-                <ol><h2> Morphologie en V </h2></ol><img class="item1" src="../medias/v.png">
-                <ol> Caractéristiques de la morphologie en V: </ol>
-                <ol> - Epaules plus larges que les hanches </ol>
-                <ol> - Hanches étroites </ol>
-                <ol> - Silhouette mince ou plutôt mince </ol>
-                <ol> Objectif: étoffer le bas de votre silhouette pour l’équilibrer avec le haut tout en veillant à ne pas augmenter votre carrure.</ol>
-                </li>         
-            </article>
-        </section>
+                <div class="article-long">
+                    <ul>
+                        <ol>
+                            <h2> Morphologie en V </h2>
+                        </ol>
+                            <img class="item1" src="../medias/v.png">
+                        <h3> Caractéristiques de la morphologie en V: </h3>
+                        <ol> - Epaules plus larges que les hanches </ol>
+                        <ol> - Hanches étroites </ol>
+                        <ol> - Silhouette mince ou plutôt mince </ol><br>
+                        <ol> Objectif: étoffer le bas de votre silhouette pour l’équilibrer avec le haut tout en veillant à ne pas augmenter votre carrure.</ol>
+                        <ol> Pour cela il faut éviter tous les vêtements qui puissent étoffer le haut de votre corps comme les épaulettes ou les tops à col ras du cou.</ol>
+                        <ol> De plus il faut également éviter des bas trop flashy sauf pour les jupes qui attirent le regard sur vos jambes.</ol>
+                        <img class="looks" src="../medias/pantalon.jpg">
+                        <img class="looks" src="../medias/epaulettes.jpg">
+                        <h3> Quels vêtements prendre pour vous sublimer ? </h3>
+                        <ol> Pour cacher vos épaules et mettre en avant vos jambes et votre poitrine, optez pour une robe trapèze.</ol>
+                        <ol> Pour le haut de votre corps il vaut mieux prendre des tenues fluides qui ne collent pas à la peau.</ol>
+                        <img class="looks" src="../medias/robe-trapeze.jpg">
+                        <img class="looks" src="../medias/top-fluide.jpeg">
+                    </ul>         
+                </div>
+            </div>
+            </div>
+        
 
     </body>
 
-    <footer>
-        <div class="footer"></div>
-    </footer>
+        <!-- Footer -->
+        <footer class="page-footer font-small unique-color-dark">
+
+            <div class="style-foot">
+                <div class="container">
+          
+                            <!-- Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+          
+                            <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="foot">Connectez-vous avec nous sur les réseaux sociaux !</h6>
+                        </div>
+                            <!-- Grid column -->
+          
+                            <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          
+                            <!-- Facebook -->
+                            <a class="icones">
+                                <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="icones">
+                                <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            </a>
+                            <!-- Google +-->
+                            <a class="icones">
+                                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="icones">
+                                <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </a>
+                            <!--Instagram-->
+                            <a class="icones">
+                                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </a>
+          
+                        </div>
+                            <!-- Grid column -->
+          
+                    </div>
+                             <!-- Grid row-->
+          
+                </div>
+            </div>
+          
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+          
+              <!-- Grid row -->
+              <div class="row mt-3">
+          
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+                  <!-- Content -->
+                  <h6 class="titres">Mode actu</h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>Bienvenue sur Mode actu, le site de vente et de conseils sur la mode. Retrouvez tous nos articles vous présentant toutes les dernières tendances.</p>
+                  
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+                  <!-- Links -->
+                  <h6 class="titres">Contenu </h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <a href="morphologie.html">Articles</a>
+                  </p>
+                  <p>
+                    <a href="produits.html">Produits</a>
+                  </p>
+                  
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+                  <!-- Links -->
+                  <h6 class="titres">Liens</h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <a href="../index.html">Accueil</a>
+                  </p>
+                  <p>
+                    <a href="blog.html">Blog</a>
+                  </p>
+                  <p>
+                    <a href="connexion.html">Connexion</a>
+                  </p>
+                  <p>
+                    <a href="inscription.html">Inscription</a>
+                  </p>
+                  <p>
+                    <a href="contact.html">Contact</a>
+                  </p>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+                  <!-- Links -->
+                  <h6 class="titres">Contact</h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <i class="fa fa-home" aria-hidden="true"></i> Paris, France</p>
+                  <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>Modeactu@example.com</p>
+                  <p>
+                    <i class="fa fa-phone-square" aria-hidden="true"></i> + 01 234 567 88</p>
+                  <p>
+                    <i class="fa fa-phone-square" aria-hidden="true"></i></i> + 01 234 567 89</p>
+          
+                </div>
+                <!-- Grid column -->
+          
+              </div>
+              <!-- Grid row -->
+          
+            </div>
+            <!-- Footer Links -->
+          
+            <!-- Copyright -->
+            <img id="logo1" src="../medias/logo.png">
+            <div class="copyright">©2019 Copyright:
+              <a href="https://mdbootstrap.com/education/bootstrap/"> Mode-Actu.com</a>
+            </div>
+            <!-- Copyright -->
+          
+          </footer>
+          <!-- Footer -->
 </html>

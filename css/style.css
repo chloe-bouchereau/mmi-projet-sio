@@ -1,16 +1,53 @@
 body
 {
     width: 100%;
-    height: 100%;
+    height: 1000px;
     margin: 0 auto;
     background-color: black;
+    overflow-x: hidden;
 }
 
+/* Logo de la navbarre*/
+#logo
+{
+width: 30%;
+height: 300px;
+margin: 0px -50px -50px -50px;
+}
+@media (max-width: 750px)
+{
+#logo
+{
+  width: 300px;
+  height: 300px;
+}
+}
+
+/* Logo du footer*/
+#logo1
+{
+width: 15%;
+margin-top: -11%;
+float: left;
+}
+@media (max-width: 750px)
+{
+#logo1
+{
+  width: 35%;
+  margin-top: 20%;
+  margin-left: 30%;
+  
+}
+}
+
+/* Barre de navigation*/
 nav
 {
+z-index: 3;
 border: solid;
 width: 100%;
-height: 150px;
+height:300px;
 margin: 0 auto;
 background: white;
 outline: 1px solid rgba(0,0,0,0,2);
@@ -24,29 +61,40 @@ padding: 1%;
 margin-right: 0px;
 float: right;
 }
+/* Liens de la barre de navigation*/
 .menu a
 {
 display: block;
 float: right;
 padding: 2%;
-padding-top: 70px;
+padding-top: 100px;
 font-family: 'Times New Roman', Times, serif;
 }
+
+@media (max-width: 750px)
+{
+  .menu a{
+    width: 100%;
+    height: 1%;
+    padding-top: 15%;
+    margin-right: 0%;
+    text-align: right;
+  }
+}
+
 a
 {
 text-decoration: none;
 color: black;
 font-style: oblique;
 }
+/* Page blog
+Section où l'on retrouve le sous-titre*/
 
-.top2
+.diapo
 {
 width: 100%;
-height: auto;
-background-color: black;
-margin: 0 auto;
-display: block;
-float: left;
+height: 100%;
 }
 
 
@@ -55,12 +103,25 @@ section.top
 width: 100%;
 height: 150%;
 background:black;
-margin: 0 auto;
+margin: auto;
 display: block;
 max-width: 100%;
 max-height: 150%;
 }
 
+/* Sous titre*/
+h1
+{
+color: white;
+font-size: 90px;
+font-family: 'Caveat', Times, serif!important;
+text-align: center;
+margin-left: 5%;
+margin-top: 100px;
+}
+
+
+/* Articles */
 section.top article
 {
 height:500px;
@@ -71,7 +132,22 @@ overflow: hidden;
 transition: 2s ease;
 margin-left: 2%;
 }
-
+/* article de la page morphologie*/
+article
+{
+width: 30%;
+margin-top: 100px;
+margin-bottom: 100px;
+border: solid 1px;
+float: left;
+}
+.looks
+{
+  width: 15vw;
+  height: 15vw;
+  margin: 4%;
+}
+/* Animation sur les articles*/
 section.top article:hover
 {
 background: rgb(120, 121, 121);
@@ -79,31 +155,7 @@ box-shadow: 0 1px 5px rgba(0,0,0,0,2);
 transition:2s ease;
 }
 
-section.bottom
-{
-width: 100%;
-height: 100%;
-background: grey;
-}
-
-article
-{
-width: 30%;
-height: 20%;
-margin-top: 100px;
-border: solid 1px;
-float: left;
-background: white;
-}
-h1
-{
-color: white;
-font-size: 90;
-float: left;
-font-family: 'Times New Roman', Times, serif;
-margin-left: 5%;
-}
-
+/* Titres des articles*/
 .text
 {
 color: red;
@@ -112,6 +164,7 @@ text-align: center;
 font-family: 'Times New Roman', Times, serif;
 }
 
+/*Images des articles*/
 article img
 {
 width: 100%;
@@ -121,59 +174,48 @@ float: left;
 
 .item1
 {
-width: 50%;
-height: 80%;
+width: 30vw;
+height: 85%;
 float: left;
 }
 
-.col-xs-sm-md-lg-4
+@media (max-width: 720px)
 {
-width: 30%;
-margin: 10px;
-float: left;
+  .item1
+  {
+    height: 50%;
+  }
+}
+/*articles page morphologie*/
+.article-long
+{
+width: 80%;
+background-color: white;
+margin-right: auto;
+margin-left: auto;
 }
 
+/* Texte article morphologies*/
+ol
+{
+font-size: 1vw;
+}
+
+/* Images page d'accueil*/
 .img
 {
-width: 90%;
-height: 70%;
+height: 50%;
+margin: 2% 2% 2% 2%;
 display: block;
-margin: auto;
-padding: 1%;
-margin: 0% 25% 0% 25%;
 overflow: hidden;
 transition: 2s;
+float: left;
 }
 
+ /* Animation sur les images*/
 .img:hover
 {
-transition: 2s;transform: scale(1.1);
-}
-
-#pic1
-{
-background-size: 100% auto;
-background: url('medias/printemps.png') center center;
-}
-
-
-#pic2
-{
-background-size: 100% auto;
-background: url('medias/ete.png') center center;
-}
-
-
-#pic3
-{
-background-size: 100% auto;
-background: url('medias/automne.png') center center;
-}
-
-#pic4
-{
-background-size: 100% auto;
-background: url('medias/hiver.png') center center;
+transition: 2s;transform: scale(0.9);
 }
 
 @media screen and (max-width: 769px)
@@ -186,19 +228,7 @@ text-align: center;
 font-style: oblique;
 }
 
-.post
-{
-background: red;
-}
-
-
-.images
-{
-margin: auto;
-height: 30%;
-width: 100%;
-}
-
+/* Image bandeau du haut de page*/
 .bandeau
 {
 width: 100%;
@@ -206,55 +236,432 @@ height: 90%;
 float: left;
 }
 
+/* Footer du site*/
 footer 
 {
 width: 100%;
-height: 15%;
-background-color: white;
+background: white;
 display: block;
+text-align: center;
 float: left;
+}
+
+.reseaux
+{
+  width: 3%;
+  height: 4%;
+  margin-right: 35px;
+  margin-left: 40px;
+  margin-top: -150px;
+
+}
+
+/* Texte du footer*/
+
+/* Texte du footer */
+.style-foot
+{
+  background-color: rgba(88, 39, 54, 0.931);
 }
 
 .foot
 {
-padding-top: 5%;
-font-weight: bold;
-font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-size: 1vw;
+  color: black;
 }
-.text-position
+.titres
 {
-width: 100%;
+  font-size: 2vh;
+  font-style: oblique;
 }
 
-.long-article
+.icones
 {
-width: 50%;
-height: 100%;
-background-color: white;
+  margin: 2%;
+}
+@media (min-width: 1200px)
+{
+.copyright
+{
+  margin-top: 3%;
+  margin-left: 38%;
+}
+}
+@media (min-width: 720px)
+{
+  .copyright
+  {
+    margin-right: 30%;
+    padding-right: 20%;
+  }
 }
 
-ol
+.fa 
 {
-position: relative;
+ font: normal normal 19px/1 FontAwesome;
 }
 
-section
+@media (min-width: 1200px)
 {
-position: relative;
+.col-lg-7
+{
+  margin-top: 1%;
+}
+}
+/*Formulaire d'insciption*/
+
+.formulaire1
+{
+  width: 80%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
-#titre
+@media (max-width: 720px)
 {
-padding-top: 7%;
-margin-left: 20%;
-float: left;
-color: #fffefa;
-font-family: 'Times New Roman', Times, serif;
+.formulaire1
+{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
-.bande
+/*Sous-titre*/
+#titre2
 {
-width: 100%;
-height: 50%;
-background: url('../medias/bande.png') center center;
+  color: black;
+  font-size: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
+
+.case
+{
+  border: solid;
+  color: black;
+  width: 45%;
+  height: 5%;
+  float: left;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+h4
+{
+   text-align: center;
+   margin-top: 15%;
+}
+
+.bouton
+{
+  margin-left: 42%;
+  width: 15%;
+  margin-top: 3%;
+
+}
+
+
+
+/* Chargement */
+.loader
+{
+  width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+}
+
+@-webkit-keyframes spin{
+  0%{ -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  50%{ -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes spin{
+  0%{ -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  50%{ -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.loader-quart:after
+{
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: rgb(80, 17, 66);
+  -webkit-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
+}
+
+/* Page de connexion*/
+.formulaire1 h1
+{
+  color: black;
+  font-size: 60px;
+  padding-top: 10%;
+}
+.formulaire1 h2
+{
+  color: rgb(146, 11, 11);
+  font-size: 40px;
+  text-align: center;
+  padding-top: 2%;
+}
+@media (max-width: 720px)
+{
+.row .h2
+{
+  width: 100%;
+  font-size: 5vw;
+  float: right;
+}
+}
+
+.connexion
+{
+  padding-left: 37%;
+}
+
+.connexion .case
+{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.connexion .bouton
+{
+  width: 45%;
+  height: 5%;
+  background-color: black;
+  color:white;
+  margin-left: auto;
+}
+.mdp
+{
+  text-decoration: underline;
+  margin-left: 17%;
+}
+
+@media (max-width: 720px){
+  .mdp
+  {
+    text-align: center;
+    margin-left: 0%;
+  }
+
+}
+/*Page produits*/
+
+
+
+.centered-block{
+  display:block;
+  margin:0 auto;
+  width:50%;
+  height:500px;
+  background:black;
+}
+
+.produits
+{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.style-produits
+{
+  background-color: white;
+  margin: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+}
+
+.bord-de-page
+{
+  width: 15%;
+  height: 176%;
+  margin-top: 2%;
+  margin-left: 2%;
+  background-color: white;
+  float: left;
+}
+
+h4
+{
+  size: 1.5vw;
+  font-style: oblique;
+  text-align: center;
+}
+
+@media (max-width: 760px)
+{
+  .vetements ol
+  {
+    font-size: 1.5vw;
+  }
+  .vetements h4
+  {
+    font-size: 1.5vw;
+  }
+}
+.vetements ol
+{
+  margin-right: 35%;
+  padding: 1%;
+  font-size: 0.5vw;
+  text-align: center;
+}
+
+.vetements h3
+{
+  text-align: center;
+}
+@media (max-width: 720px)
+{
+  .vetements h3
+  {
+    font-size: 1.6vw;
+  }
+  .style-produits
+  {
+    width: 100%;
+    height: 70vw;
+  }
+}
+
+.panier
+{
+  width: 96%;
+  height: 30%;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: white;
+}
+
+.bande-panier
+{
+  width: 100%;
+  height: 2vw;
+  margin-top: 15%;
+  background-color: rgba(88, 39, 54, 0.931);
+
+}
+
+@media (max-width: 760px)
+{
+  .bande-panier
+  {
+    margin-top: 56%;
+    height: 5vw;
+  }
+}
+
+.icone-panier
+{
+  color: white;
+  margin-top: 1%;
+  font: 25/1px;
+
+}
+
+.texte-panier
+{
+  margin-left: 85%;
+  color: white;
+  font-size: 1vw;
+  padding-right: 
+}
+
+/*page contact*/
+
+.case-text
+{
+  width: 40%;
+  height: 3vw;
+  margin-left: 5%;
+  margin-top: 3vw;
+}
+
+@media (max-width: 720px){
+  .case-text
+  {
+    width: 50%;
+    height: 12vw;
+    margin-left: 5%;
+    font-size: 2vw;
+  }
+}
+
+.message
+{
+  width: 40%;
+  height: 12vw;
+  margin-left: 5%;
+  margin-top: 3vw;
+  margin-bottom: 5%;
+  float: left;
+}
+
+@media (max-width: 720px){
+  .message
+  {
+    width: 50%;
+    height: 30vw;
+    font-size: 2vw;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+.bouton
+{
+  float: left;
+  margin-bottom: 5%;
+  width: 8%;
+  margin-top: 12%;
+  margin-left: -23%;
+}
+
+@media (max-width: 720px)
+{
+  .bouton
+  {
+    margin-top: 20%;
+    width: 15%;
+    margin-left: -30%;
+  }
+}
+
+
+.icone
+{
+  width: 3vw;
+  margin-left: 15%;
+  
+}
+
+.text-color
+{
+  color: white;
+  margin-left: 3%;
+  font-size: 1vw;
+}
+
